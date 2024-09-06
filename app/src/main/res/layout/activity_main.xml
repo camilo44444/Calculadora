@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculadora"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+
+        <EditText
+            android:id="@+id/edt_num1"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="20dp"
+            android:hint="0"
+            android:inputType="number" />
+
+        <!-- Spinner para seleccionar el operador -->
+        <Spinner
+            android:id="@+id/spinner_signo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="38dp" />
+
+
+
+        <EditText
+            android:id="@+id/edt_num2"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:hint="0"
+            android:inputType="number" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_sumar"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Calcular" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
